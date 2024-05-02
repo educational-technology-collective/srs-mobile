@@ -28,6 +28,8 @@
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
     "cordova-plugin-ionic": "5.5.3",
+    "dexie": "^4.0.4",
+    "dexie-react-hooks": "^1.1.7",
     "html-react-parser": "^4.0.0",
     "ionicons": "^7.0.0",
     "react": "^18.2.0",

@@ -55,6 +55,9 @@ setupIonicReact({
   swipeBackEnabled: false,
 });
 
+import { db } from "./db/db.js"
+console.log("DEXIE DB : ", db.decks.toArray().then((decks) => console.log(decks)))
+
 const App: React.FC = () => {
   const { isAuthenticated, isLoading, user, getAccessTokenSilently, logout } =
     useAuth0();
