@@ -284,9 +284,19 @@ const App: React.FC = () => {
               let temp = cards[i][j];
               cards[i][j] = cards[i][k];
               cards[i][k] = temp;
+
+              console.log(`card ${i} - ${j}: `, cards[i][j].type);
+
+              
             }
           }
+          // remove all the cards that are of type "qa"
 
+          for (let i = cards.length - 1; i >= 0; i--) {
+            cards[i] = cards[i].filter((card: any) => card.type !== "qa");
+          }
+
+          console.log("cards after qa removal: ", cards);
           setCards(cards);
           setTotal(cards.length);
           setCounter(cards.length);
